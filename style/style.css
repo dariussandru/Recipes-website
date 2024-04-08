@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  color: #699053;
+}
+body {
+  background: #e4e9f7;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.box {
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+}
+.form-box {
+  width: 450px;
+  margin: 0px 10px;
+}
+.form-box header {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
+}
+.form-box form .field {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.form-box form .input input {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.btn {
+  height: 35px;
+  background: #ffb92a;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btn-delete {
+  height: 35px;
+  background: #de3e0d;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btn:hover {
+  opacity: 0.82;
+}
+.submit {
+  width: 100%;
+}
+.links {
+  margin-bottom: 15px;
+}
+
+/********* Home *****************/
+
+.nav {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 60px;
+  z-index: 100;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 900;
+}
+.logo a {
+  text-decoration: none;
+  color: #1e293b;
+}
+.right-links a {
+  padding: 0 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.main-box {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.main-box .top {
+  display: flex;
+  flex-direction: row;
+}
+/*---------------search bar-----*/
+.container-search {
+  background-color: #1e293b;
+  padding: 35px 20px 38px;
+  width: 90vw;
+  max-width: 512px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+}
+
+.search-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 15px;
+}
+
+.search-box input {
+  font-size: 15px;
+  padding: 6px;
+  border: 2px solid #ccc;
+  background: transparent;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.search-box button {
+  font-size: 15px;
+  background-color: #ffb92a;
+  border: none;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+img {
+  display: block;
+  width: 35%;
+  margin: 28px auto 22px;
+  border-radius: 6px;
+}
+
+.details {
+  background-color: #ffb92a;
+  position: relative;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.details h2 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.details h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+ul {
+  font-size: 15px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 12px 16px;
+  padding: 16px 0 0 18px;
+  color: #ccc;
+  text-transform: capitalize;
+}
+h3 {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 15px;
+}
+#show-recipe {
+  font-size: 15px;
+  position: relative;
+  left: 60%;
+  padding: 8px 12px;
+  background-color: #ffb92a;
+  border: none;
+  top: 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+#reset-page {
+  font-size: 15px;
+  position: relative;
+  left: 2%;
+  padding: 8px 12px;
+  background-color: #ffb92a;
+  border: none;
+  top: 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#recipe {
+  position: absolute;
+  background-color: #1e293b;
+  min-height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 10px;
+  display: none;
+}
+
+#recipe pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 40px 24px 24px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#hide-recipe {
+  font-size: 15px;
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background-color: #ffb92a;
+  border: none;
+  top: 18px;
+  left: 91%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#show-recipe:hover,
+#hide-recipe:hover,
+.search-box button:hover {
+  background-color: #e69b00;
+}
+
+#ingre-container h3 {
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and(max-width: 500px) {
+  .container {
+    font-size: 14px;
+    padding: 35px 25px 28px;
+  }
+  #show-recipe {
+    left: 73%;
+  }
+}
+@media only screen and (max-width: 840px) {
+  .main-box .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .top .box {
+    margin: 10px 10px;
+  }
+}
+.message {
+  text-align: center;
+  background: #f9eded;
+  padding: 15px 0px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: rgb(194, 63, 63);
+}
